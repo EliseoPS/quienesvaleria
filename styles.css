@@ -1,0 +1,381 @@
+* {
+    font-family: 'STIX Two Text', serif; /* Reemplaza por la tipografía que desees */
+}
+
+.navbar-color{
+    background: #9999a1;
+    color: black;
+}
+
+.navbar {
+    color: black; /* Cambia el color de texto predeterminado */
+    font-family: "STIX Two Text", serif;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link.active{
+    color: white;
+    text-decoration: underline; 
+    text-decoration-color: white;
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: #faf9f9;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+}
+.subrayar {
+    float: left;
+    display: block;
+    color: #faf9f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+  /* Pseudo-elemento para el subrayado */
+.subrayar::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: inline-block;
+    margin-top: 5px;
+    right: 0;
+    bottom: 0;
+    background: #faf9f9;
+    transition: width 0.4s ease;
+}
+
+  /* Efecto de hover para el subrayado */
+.subrayar:hover::after {
+    width: 100%;
+    left: 0;
+    background: #faf9f9;
+}
+.img-logo{
+    width: 250px;
+    height: auto;
+}
+body{
+    background-color: #faf9f9 !important;
+    font-family: "STIX Two Text", serif;
+}
+div{
+    font-family: "STIX Two Text", serif;
+}
+
+.img-portada{
+    width: 100%; /* Ocupa el 100% del ancho del viewport */
+    height: 100vh; /* Ocupa el 100% del alto del viewport */
+    object-fit: cover; /* Ajusta la imagen para llenar el área sin deformarla */
+}
+
+/* Estilo para el contenedor */
+.contenedor-portada {
+    position: relative; /* Necesario para posicionar elementos dentro */
+    width: 100%; /* Ocupa todo el ancho del viewport */
+    height: 100vh; /* Ocupa todo el alto del viewport */
+}
+
+/* Estilo para el texto */
+.texto-portada {
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta el texto al centro exacto */
+    color: white; /* Color del texto */
+    font-size: 4rem; /* Tamaño del texto, ajusta según necesites */
+    text-align: center; /* Alineación del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Opcional: sombra para que sea legible sobre la imagen */
+}
+.titulo{
+    font-size: 3rem;
+}
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+}
+.sub-titulo{
+    font-size: 2.5rem;
+    opacity: .80;
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+.ham-menu span{
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    color: #000000;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    opacity: .80;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%,-50%)
+    rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%,-50%)
+    rotate(-45deg);
+}
+
+.buttoncss {
+    background-color: #ffffff00;
+    color: #000000;
+    width: 8.5em;
+    height: 2.9em;
+    border: #000000 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+}
+
+.buttoncss:hover {
+    background-color: black;
+    cursor: pointer;
+    color: #faf9f9;
+}
+
+.buttoncss svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+.buttoncss:hover svg {
+    transform: translateX(5px);
+}
+
+.text {
+    margin: 0 1.5em
+}
+.contact-column {
+    position: relative;
+    padding: 20px;
+}
+
+.contact-column:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background-color: black;
+}
+/* Ocultar las líneas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .contact-column:not(:last-child)::after {
+        display: none;
+    }
+}
+
+.contact-item {
+    color: black;
+}
+
+.contact-item i {
+    color: black; /* Cambia el color según tu branding */
+}
+
+.contact-item h5 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-item a {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: black; /* Efecto hover */
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 70%;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .w-mobile-100 {
+        width: 100% !important;
+    }
+}
+@media (max-width: 767px) {
+    .buttoncss {
+        text-align: center;
+    }
+}
+
+#carouselRetratos {
+    max-width: 100%; /* Ajusta el ancho del carrusel */
+     overflow: hidden; /* Ajusta la altura máxima */
+}
+
+#carouselRetratos .carousel-item img {
+    max-height: 300px; /* Limita la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar estilo */
+}
+.carousel-inner {
+    width: 100%; 
+    height: auto;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.button-vermas {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.button-vermas.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+.button-vermas.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+.button-vermas.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.button-vermas.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.button-vermas.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.button-vermas.learn-more .button-vermas-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button-vermas:hover .circle {
+    width: 100%;
+}
+
+.button-vermas:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.button-vermas:hover .button-vermas-text {
+    color: #fff;
+}
+
+.navbar{
+    --bs-navbar-toggler-border-color: #FFFFFF00 !important;
+}

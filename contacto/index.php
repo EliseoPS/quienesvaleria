@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quien es Valeria? - Contacto</title>
+    <meta name="keywords" content="Quien es Valeria? - Fotografía profesional" >
+    <meta name="description" content="Soy fotógrafa retratista. He trabajado en el periódico Reforma, en la revista CAMBIO de Gabriel García Márquez, en agencias de publicidad, en editoriales y en Presidencia. Ahora hago imágenes por mi cuenta poniendo todo mi conocimiento y experiencia al servicio de quien lo necesite." >
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- OPENGRAPH -->
+    <meta property="og:title" content="Quien es Valeria? - Fotografía profesional">
+    <meta property="og:description" content="Soy fotógrafa retratista. He trabajado en el periódico Reforma, en la revista CAMBIO de Gabriel García Márquez, en agencias de publicidad, en editoriales y en Presidencia. Ahora hago imágenes por mi cuenta poniendo todo mi conocimiento y experiencia al servicio de quien lo necesite.">
+    <meta property="og:url" content="https://quienesvaleria.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Quien es Valeria? - Fotografía profesional">
+    <meta property="og:locale" content="es_ES">
+    <!-- Icono en whatsApp desde celular -->
+    <meta property="og:image" content="https://quienesvaleria.com/favicon/web-app-manifest-192x192.png"/>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="QuienEsValeria" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-color fixed-top">
+            <div class="container-fluid">
+                <a href="/" class="ps-md-5 px-3 py-2">
+                    <img src="../images/logo-quienesvaleria.webp" alt="Logo Quien Es Valeria" class="img-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="ham-menu">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link subrayar" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link subrayar" href="../acerca/index.html">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link subrayar" href="../galeria/index.html">Galería</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link subrayar" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="height: 162px;">
+    </div>
+
+    <div class="container my-5 px-md-0 px-3">
+        <div class="row px-3 px-md-5">
+            <!-- Columna de texto con la dirección -->
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1 class="mb-3 titulo" style="color: black;">Pongámonos en contacto</h1>
+                    <p style="color: black;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eius laudantium modi voluptates. Eum nulla, rem quaerat nostrum aliquid ut quam repellat minima at dolor deserunt enim placeat voluptatem incidunt!
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Columna del formulario -->
+            <div class="col-md-6  align-items-center" data-aos="fade-up">
+                <div>
+                    <form  method="post" action="">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label" style="color: black;">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="correo" class="form-label" style="color: black;">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="floatingSelectServicio" class="form-label" style="color: black;">¿Que tipo de servicio necesitas?</label>
+                            <div class="form-floating">
+                                <select required class="form-select" id="floatingSelectServicio" name="floatingSelectServicio" aria-label="Floating label select example" required>
+                                    <option value="Boda">Boda</option>
+                                    <option value="Compromiso">Compromiso</option>
+                                    <option value="Moda">Moda</option>
+                                    <option value="Casual">Casual</option>
+                                    <option value="Otro" selected>Otro </option>
+                                </select>
+                                <label for="floatingSelectServicio">Selecciona una opción</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="floatingSelectEnteraste" class="form-label" style="color: black;">¿Cómo te enteraste de mi?</label>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelectEnteraste" name="floatingSelectEnteraste" required>
+                                    <option value="Boda">Facebook Ads</option>
+                                    <option value="Compromiso">Google Search</option>
+                                    <option value="Moda">Me recomendó un amigo</option>
+                                    <option value="Otro" selected>Otro</option>
+                                </select>
+                                <label for="floatingSelectEnteraste">Selecciona una opción</label>
+                            </div>
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label" style="color: black;">Comentarios</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" required></textarea>
+                        </div>
+
+                        <div class="justify-content-center">
+                            <button class="buttoncss w-mobile-100">
+
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                </svg>
+
+                                
+                                <div class="text">
+                                    Enviar
+                                </div>
+
+                            </button>
+                        </div>
+                                <!-- Mostrar el mensaje de éxito o error -->
+                        <?php if (!empty($mensaje)): ?>
+                            <div class="alert <?= $mensaje_clase; ?>" role="alert">
+                                <?= $mensaje; ?>
+                            </div>
+                        <?php endif; ?> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="color: black;">
+
+    <div class="container my-5">
+        <div class="row text-center align-items-center px-3 px-md-5">
+            <!-- Redes Sociales -->
+            <div class="col-12 col-md-4 contact-column my-3 mt-md-0">
+                <div class="contact-item">
+                    <h5 class="mt-3">Redes Sociales</h5>
+                    <p>
+                        <i class="bi bi-instagram p-1"></i><a href="https://www.instagram.com/quienesvaleria?igsh=OGF5OW0wZ3Bpbmh1" rel="noopener noreferrer" target="_blank" class="text-decoration-none" style="color: black;">quienesvaleria</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="col-12 col-md-4 contact-column my-3 mt-md-0">
+                <div class="contact-item">
+                    <h5 class="mt-3">Teléfono</h5>
+                    <p><i class="bi bi-whatsapp p-1"></i><a href="https://wa.me/525554167785" class="text-decoration-none" rel="noopener noreferrer" target="_blank" style="color: black;">+52 55 5416 7785</a></p>
+                </div>
+            </div>
+
+            <!-- Correo -->
+            <div class="col-12 col-md-4 contact-column my-3 mt-md-0">
+                <div class="contact-item">
+                    <h5 class="mt-3">Correo</h5>
+                    <p><a href="mailto:quienesvaleriaag@gmail.com" style="text-decoration: none; color: black;">quienesvaleriaag@gmail.com</a></p>
+                    <p><a href="mailto:contacto@quienesvaleria.com" style="text-decoration: none; color: black;">contacto@quienesvaleria.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="text-muted">© 2025 QuienEsValeria</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-3">
+            <li class="ms-3"><a class="text-muted" style="text-decoration: none;" href="/contacto/index.php">Contacto</a></li>
+            <li class="ms-3"><a class="text-muted" href="https://wa.me/525554167785"><i class="bi bi-whatsapp p-1"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/quienesvaleria?igsh=OGF5OW0wZ3Bpbmh1"><i class="bi bi-instagram p-1"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../hamburgerMenu.js"></script>
+    
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        // Inicialización de Fancybox
+        Fancybox.bind("[data-fancybox='gallery']", {
+            // Opciones de Fancybox
+            // Puedes personalizar las opciones según tus necesidades
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
