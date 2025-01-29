@@ -268,6 +268,12 @@ opacity: 0;
     font-size: 14px;
     margin: 0 auto;
 }
+@media (max-width: 768px) {
+    .radio-inputs{
+        display: grid;
+    }
+}
+
 
 .radio-inputs .radio {
     flex: 1 1 auto;
