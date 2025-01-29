@@ -37,15 +37,6 @@
     font-size: 17px;
     position: relative;
 }
-@media (max-width: 768px) {
-    .subrayar::after {
-        background: black;
-    }
-    .subrayar:hover::after{
-        background: black;
-    }
-}
-
   /* Pseudo-elemento para el subrayado */
 .subrayar::after {
     content: '';
@@ -62,6 +53,36 @@
 
   /* Efecto de hover para el subrayado */
 .subrayar:hover::after {
+    width: 100%;
+    left: 0;
+    background: #faf9f9;
+}
+.subrayar-drop {
+    float: left;
+    display: block;
+    color: #faf9f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+  /* Pseudo-elemento para el subrayado */
+.subrayar-drop::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: inline-block;
+    margin-top: 5px;
+    right: 0;
+    bottom: 0;
+    background: #faf9f9;
+    transition: width 0.4s ease;
+}
+
+  /* Efecto de hover para el subrayado */
+.subrayar-drop:hover::after {
     width: 100%;
     left: 0;
     background: #faf9f9;
