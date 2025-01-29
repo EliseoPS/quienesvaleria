@@ -9,23 +9,23 @@
 }
 
 .navbar {
-    color: black; /* Cambia el color de texto predeterminado */
+    color: white; /* Cambia el color de texto predeterminado */
     font-family: "STIX Two Text", serif;
 }
 .nav-link{
-    color: black !important;
+    color: white !important;
 }
 .nav-link.active{
-    color: black;
+    color: white;
     text-decoration: underline; 
-    text-decoration-color: black;
+    text-decoration-color: white;
 }
 
 .navbar-nav{
     --bs-nav-link-hover-color: #faf9f9;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: black;
+    color: white;
 }
 .subrayar {
     float: left;
