@@ -37,6 +37,14 @@
     font-size: 17px;
     position: relative;
 }
+@media (max-width: 768px) {
+    .subrayar::after {
+        background: black;
+    }
+    .subrayar:hover::after{
+        background: black;
+    }
+}
 
   /* Pseudo-elemento para el subrayado */
 .subrayar::after {
@@ -428,5 +436,5 @@ opacity: 0;
 }
 
 .dropdown-menu.show{
-    display: grid;
+    display: grid !important;
 }
