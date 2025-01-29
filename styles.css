@@ -399,3 +399,34 @@ opacity: 0;
         background-color: transparent;
     }
 }
+.dropdown-menu{
+    --bs-dropdown-link-hover-bg: transparent;
+    --bs-dropdown-border-color: none;
+    background-color: white;
+}
+  /* Fondo blanco completo para el contenedor del dropdown */
+.dropdown-menu {
+    background-color: #ffffff !important; /* Fondo blanco */
+    border: 1px solid #ddd; /* Opcional: borde para separar el menú del fondo */
+    border-radius: 8px; /* Opcional: redondea las esquinas */
+    padding: 0.5rem; /* Espaciado interno del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el menú */
+}
+
+  /* Estilo para los elementos dentro del dropdown */
+.dropdown-menu .dropdown-item {
+    background-color: transparent; /* Sin fondo individual */
+    padding: 0.5rem 1rem; /* Espaciado interno de los enlaces */
+    color: #333; /* Color de texto */
+    border-radius: 4px; /* Opcional: redondea cada elemento */
+}
+
+  /* Cambiar el fondo al pasar el cursor (hover) */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #0c1a2a; /* Texto más oscuro */
+}
+
+.dropdown-menu.show{
+    display: inline-block;
+}
