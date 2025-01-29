@@ -428,5 +428,5 @@ opacity: 0;
 }
 
 .dropdown-menu.show{
-    display: inline-block;
+    display: grid;
 }
