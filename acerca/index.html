@@ -66,8 +66,24 @@
                         <li class="nav-item mx-2">
                             <a class="nav-link subrayar" href="#">Acerca de mí</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link subrayar" href="../galeria/index.html">Galería</a>
+                        <li class="nav-item dropdown mx-2 subrayar d-flex align-items-center">
+                            <!-- Link a la página Galería -->
+                            <a class="nav-link" href="../galeria/index.html" id="navbarGaleria" role="button">
+                                Galería
+                            </a>
+                            
+                            <!-- Chevron desplegable -->
+                            <span role="button" id="chevronDropdown" data-bs-toggle="dropdown" aria-expanded="false" class="ms-1">
+                                <i class="bi bi-chevron-down"></i>
+                            </span>
+                        
+                            <!-- Menú desplegable -->
+                            <ul class="dropdown-menu" aria-labelledby="chevronDropdown">
+                                <li class="subrayar-drop"><a class="dropdown-item" href="../galeria/index.html#section-retratos">Retrato</a></li>
+                                <li class="subrayar-drop"><a class="dropdown-item" href="../galeria/index.html#section-publicos">Personajes públicos</a></li>
+                                <li class="subrayar-drop"><a class="dropdown-item" href="../galeria/index.html#section-mujeres">Mujeres</a></li>
+                                <li class="subrayar-drop"><a class="dropdown-item" href="../galeria/index.html#section-editorial">Editorial</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link subrayar" href="../contacto/index.html">Contacto</a>
