@@ -385,3 +385,17 @@ opacity: 0;
 .navbar{
     --bs-navbar-toggler-border-color: #FFFFFF00 !important;
 }
+
+.navbar-toggler-icon{
+    background-image: none;
+}
+.dropdown-item{
+    color: black;
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .dropdown-item {
+        color: white;
+        background-color: transparent;
+    }
+}
