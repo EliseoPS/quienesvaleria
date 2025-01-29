@@ -13,19 +13,19 @@
     font-family: "STIX Two Text", serif;
 }
 .nav-link{
-    color: white !important;
+    color: black !important;
 }
 .nav-link.active{
-    color: white;
+    color: black;
     text-decoration: underline; 
-    text-decoration-color: white;
+    text-decoration-color: black;
 }
 
 .navbar-nav{
     --bs-nav-link-hover-color: #faf9f9;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: white;
+    color: black;
 }
 .subrayar {
     float: left;
