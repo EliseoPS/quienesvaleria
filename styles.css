@@ -465,3 +465,7 @@ opacity: 0;
 .dropdown-menu.show{
     display: grid !important;
 }
+
+.card-body{
+    padding: 0px;
+}
