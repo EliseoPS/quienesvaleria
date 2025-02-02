@@ -43,6 +43,57 @@
         <meta name="apple-mobile-web-app-title" content="QuienEsValeria" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
 </head>
+<style>
+    :root {
+        --carousel-height: 400px; /* Ajusta la altura del carrusel aquí */
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: var(--carousel-height);
+        overflow: hidden;
+    }
+
+    .carousel-container {
+        display: flex;
+        width: 300%; /* Depende del número de imágenes */
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        width: 100%;
+        flex: 0 0 100%;
+        height: var(--carousel-height);
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Controles */
+    .carousel button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+</style>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-color fixed-top">
@@ -188,50 +239,15 @@
         <div class="container my-5">
             <div class="row w-100">
                 <div class="col-12">
-                    <div style="height: 200px;">
-                        <div id="carouselExampleCaptions" class="carousel slide carousel-70vh">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="../images/retrato-2-quienesvaleria.webp" data-fancybox="gallery" data-caption="Quien es Valeria fotografía">
-                                        <img src="../images/retrato-2-quienesvaleria.webp" class="d-block w-100" alt="Fotografia de carrousel" style="height: 50%;">
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="../images/retrato-7-quienesvaleria.webp" data-fancybox="gallery" data-caption="Quien es Valeria fotografía">
-                                        <img src="../images/retrato-7-quienesvaleria.webp" class="d-block w-100" alt="Fotografia de carrousel" style="height: 50%;">
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="../images/retrato-3-quienesvaleria.webp" data-fancybox="gallery" data-caption="Quien es Valeria fotografía">
-                                        <img src="../images/retrato-3-quienesvaleria.webp" class="d-block w-100" alt="Fotografia de carrousel" style="height: 50%;">
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="../images/retrato-1-quienesvaleria.webp" data-fancybox="gallery" data-caption="Quien es Valeria fotografía">
-                                        <img src="../images/retrato-1-quienesvaleria.webp" class="d-block w-100" alt="Fotografia de carrousel" style="height: 50%;">
-                                    </a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="../images/fotografia-retrato-30-quienesvaleria.webp" data-fancybox="gallery" data-caption="Quien es Valeria fotografía">
-                                        <img src="../images/fotografia-retrato-30-quienesvaleria.webp" class="d-block w-100" alt="Fotografia de carrousel" style="height: 50%;">
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                    <div class="carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slide"><img src="https://via.placeholder.com/800x400" alt="Imagen 1"></div>
+                            <div class="carousel-slide"><img src="https://via.placeholder.com/800x400/ff7f7f" alt="Imagen 2"></div>
+                            <div class="carousel-slide"><img src="https://via.placeholder.com/800x400/77aaff" alt="Imagen 3"></div>
                         </div>
+                
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
                     </div>
                     <button class="learn-more button-vermas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <span class="circle" aria-hidden="true">
@@ -583,6 +599,17 @@
     </footer>
 
     <!-- Scripts -->
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".carousel-slide");
+        const totalSlides = slides.length;
+        const container = document.querySelector(".carousel-container");
+
+        function moveSlide(step) {
+            index = (index + step + totalSlides) % totalSlides;
+            container.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script>
