@@ -45,7 +45,13 @@
 </head>
 <style>
     :root {
-        --carousel-height: 400px; /* Ajusta la altura del carrusel aquí */
+        --carousel-height: 400px; /* Cambia la altura aquí */
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     .carousel {
@@ -53,24 +59,29 @@
         width: 100%;
         height: var(--carousel-height);
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
     }
 
     .carousel-container {
         display: flex;
-        width: 300%; /* Depende del número de imágenes */
         transition: transform 0.5s ease-in-out;
     }
 
     .carousel-slide {
-        width: 100%;
-        flex: 0 0 100%;
+        min-width: 100%;
         height: var(--carousel-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .carousel-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Hace que la imagen se ajuste sin cortarse */
     }
 
     /* Controles */
@@ -81,9 +92,10 @@
         background: rgba(0, 0, 0, 0.5);
         color: white;
         border: none;
-        padding: 10px;
+        padding: 10px 15px;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 20px;
+        z-index: 10;
     }
 
     .prev {
